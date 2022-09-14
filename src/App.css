@@ -1,3 +1,18 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: clip;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*===================================*/
 .App {
   text-align: center;
 }
@@ -7,15 +22,10 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +38,15 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  background-color: lightpink;
+  min-height: 20vh;
 }
+
+.putInCard {
+  height: 300px;
+  width: 500px;
+  border: 2px solid purple;
+  border-radius: 8px;
+}
+
