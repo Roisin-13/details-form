@@ -3,53 +3,97 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-y: clip;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-/*===================================*/
 .App {
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* #justAForm {
+  height: 100vh;
+} */
 
-
-.App-header {
-  background-color: #282c34;
-  min-height: 50px;
+.formCont {
+  margin-left: 800px;
+  padding-top: 100px;
+  width: 500px;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+margin-left: 20px;
+border-radius: 4px;
+border: 2px solid lightcoral;
+height: 30px;
 }
 
-form {
-  background-color: lightpink;
-  min-height: 20vh;
-}
-
-.putInCard {
-  margin-left: auto;
-  margin-right: auto;
-  height: 300px;
-  width: 500px;
+input:focus {
+  outline: none;
   border: 2px solid purple;
+}
+
+button[type="submit"], #btn {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #222;
+}
+
+.putInCard, #newCard  {
+  color: white;
+  background: url("./images/bg-card-front.png");
+  z-index: 1;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  height: 240px;
+  width: 440px;
   border-radius: 8px;
+  box-shadow: 0px 0px 20px rgb(17 17 17 / 40%);
+}
+
+.carNumDiv {
+  font-size: 28px;
+  margin-left: 0;
+}
+
+.nameDiv {
+text-align: left;
+margin-left: 20px;
+}
+
+#logo {
+  margin-top: 20px;
+  margin-left: -300px;
+}
+
+.putInCardBack, #newCardBack {
+  color: white;
+  background: url("./images/bg-card-back.png");
+  z-index: 1;
+  position: absolute;
+  top: 450px;
+  left: 250px;
+  height: 240px;
+  width: 440px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgb(17 17 17 / 40%);
+}
+
+#cvvDiv {
+  margin-top: 100px;
+  margin-left: 300px;
 }
 
 #btn {
@@ -57,3 +101,22 @@ form {
   margin-right: auto;
 }
 
+.bigBackground {
+  position: absolute;
+  background: url("./images/bg-main-desktop.png");
+  top: 0;
+  width: 450px;
+  height: 100vh;
+}
+
+
+#formComplete {
+  margin-left: 800px;
+  padding-top: 100px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
